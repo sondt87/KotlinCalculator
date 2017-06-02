@@ -1,0 +1,24 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MyButton" parent="Widget.AppCompat.Button">
+        <item name="android:textSize">@dimen/button_text_size</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:textColor">@color/textFirst</item>
+    </style>
+    <style name="MyButton.Second">
+        <item name="android:textColor">@color/textSecond</item>
+    </style>
+    <style name="MyButton.Third">
+        <item name="android:textColor">@color/textThird</item>
+    </style>
+        <!--<item name="android:fontFamily">sans-serif-light</item>-->
+        <!--<item name="android:background">@drawable/button</item>-->
+</resources>

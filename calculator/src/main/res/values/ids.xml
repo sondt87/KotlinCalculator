@@ -1,0 +1,25 @@
+<resources>
+    <item name="btn_00" format="integer" type="id"/>
+    <item name="btn_0" format="integer" type="id"/>
+    <item name="btn_1" format="integer" type="id"/>
+    <item name="btn_2" format="integer" type="id"/>
+    <item name="btn_3" format="integer" type="id"/>
+    <item name="btn_4" format="integer" type="id"/>
+    <item name="btn_5" format="integer" type="id"/>
+    <item name="btn_6" format="integer" type="id"/>
+    <item name="btn_7" format="integer" type="id"/>
+    <item name="btn_8" format="integer" type="id"/>
+    <item name="btn_9" format="integer" type="id"/>
+
+    <item name="btn_decimal" format="integer" type="id"/>
+
+    <item name="btn_plus" format="integer" type="id"/>
+    <item name="btn_minus" format="integer" type="id"/>
+    <item name="btn_multiply" format="integer" type="id"/>
+    <item name="btn_divide" format="integer" type="id"/>
+    <item name="btn_modulo" format="integer" type="id"/>
+    <item name="btn_power" format="integer" type="id"/>
+    <item name="btn_root" format="integer" type="id"/>
+
+
+</resources>
