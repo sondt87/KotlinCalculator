@@ -46,7 +46,7 @@ class CalculatorImpl(val calculator: Calculator, value: String = "") {
 
     fun updateFormula() {
         var first = doubleToString(baseValue)
-        var second = doubleToString(baseValue)
+        var second = doubleToString(secondValue)
         var sign = getSign(lastOperation)
 
         if(lastOperation == Key.ROOT)
@@ -73,6 +73,10 @@ class CalculatorImpl(val calculator: Calculator, value: String = "") {
         val currentValue = displayedValue;
         val newValue = formatString(currentValue + number)
         setValue(newValue)
+
+        val currentFormula = displayedFormula;
+        val newFormula = (currentFormula + number)
+        setFormular(newFormula)
     }
 
     private fun formatString(str:String) : String{
@@ -119,6 +123,12 @@ class CalculatorImpl(val calculator: Calculator, value: String = "") {
 
         if(operation == Key.ROOT)
             calculateResult()
+        else{
+            val currentFormula = displayedFormula;
+            val newFormula = (currentFormula + operation.id)
+            setFormular(newFormula)
+        }
+
     }
 
     fun handleClear(){
