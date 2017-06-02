@@ -291,13 +291,14 @@
 
         <android.support.design.widget.FloatingActionButton
             android:text="="
-            android:src="@drawable/ic_equals"
+            app:srcCompat="@drawable/ic_equals"
             android:layout_centerInParent="true"
             android:id="@+id/btn_equals"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="12dp"
             android:onClick="equalsClicked"
+
             />
 
         </RelativeLayout>

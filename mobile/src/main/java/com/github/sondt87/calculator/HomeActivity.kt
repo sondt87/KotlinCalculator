@@ -1,8 +1,10 @@
 package com.github.sondt87.calculator
 
+import android.content.res.Resources
 import android.databinding.DataBindingUtil
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.graphics.drawable.VectorDrawableCompat
 import android.view.View
 import android.widget.TextView
 import com.github.sondt87.calculator.operation.Key
@@ -25,6 +27,7 @@ class HomeActivity : AppCompatActivity(), Calculator {
         binding.operationClickedListener = View.OnClickListener { v: View? -> mCal.operationClicked(v!!.id) }
         binding.btnClear.setOnLongClickListener(View.OnLongClickListener { v: View? -> resetClicked() })
 
+        binding.btnEquals.setImageDrawable(VectorDrawableCompat.create(resources, drawable.ic_equals, theme))
         mResult = binding.result
         mFormula = binding.formula
 
