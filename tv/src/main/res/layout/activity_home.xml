@@ -16,45 +16,16 @@
     android:id="@+id/calculator_holder"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     android:background="@android:color/white"
     tools:context="com.github.sondt87.calculatortv.HomeTVActivity"
     >
-
-    <TextView
-        android:id="@+id/formula"
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1.6"
-        android:fontFamily="sans-serif-light"
-        android:gravity="right|bottom"
-        android:paddingLeft="@dimen/activity_margin"
-        android:paddingRight="@dimen/activity_margin"
-        android:background="@android:color/transparent"
-        android:textSize="@dimen/formula_text_size"/>
+        android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/result"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1.8"
-        android:fontFamily="sans-serif-light"
-        android:gravity="center_vertical|right"
-        android:background="@android:color/transparent"
-        android:maxLines="1"
-        android:paddingLeft="@dimen/activity_margin"
-        android:paddingRight="@dimen/activity_margin"
-        android:text="0"
-        android:textColor="@color/textFirst"
-        android:textSize="@dimen/display_text_size"/>
-
-    <View
-        android:layout_marginLeft="24dp"
-        android:layout_marginRight="24dp"
-        android:background="#f7f7f7"
-        android:layout_marginBottom="12dp"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -320,5 +291,52 @@
         </RelativeLayout>
 
     </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="#f7f7f7"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"/>
+    <RelativeLayout
+        android:padding="12dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_marginTop="24dp"
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center_vertical|right"
+            android:background="@android:color/transparent"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/activity_margin"
+            android:paddingRight="@dimen/activity_margin"
+            android:text="0"
+            android:textColor="@color/textFirst"
+            android:textSize="@dimen/display_text_size"/>
+
+        <TextView
+            android:layout_below="@+id/result"
+            android:visibility="visible"
+            android:lines="2"
+            android:id="@+id/formula"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="right|top"
+            android:textColor="@color/textFirst"
+            android:paddingLeft="@dimen/activity_margin"
+            android:paddingRight="@dimen/activity_margin"
+            android:background="@android:color/transparent"
+            android:textSize="@dimen/formula_text_size"/>
+    </RelativeLayout>
 </LinearLayout>
 </layout>

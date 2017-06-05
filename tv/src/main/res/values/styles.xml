@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="AppTheme" parent="@style/Theme.Leanback"></style>
+    <!--<style name="AppTheme" parent="@style/Theme.Leanback"></style>-->
+    <style name="AppTheme" parent="@style/Theme.AppCompat"></style>
+
+    <!--android:Widget.Material.Button.Borderless-->
+    <style name="MyButton" parent="android:Widget.Material.Button.Borderless">
+        <item name="android:textSize">@dimen/button_text_size</item>
+        <item name="android:textColor">@color/textFirst</item>
+    </style>
+    <style name="MyButton.Second">
+        <item name="android:textColor">@color/textSecond</item>
+    </style>
+    <style name="MyButton.Third">
+        <item name="android:textColor">@color/textThird</item>
+    </style>
 </resources>
