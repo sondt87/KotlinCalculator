@@ -27,7 +27,6 @@ class HomeActivity : AppCompatActivity(), Calculator {
         binding.operationClickedListener = View.OnClickListener { v: View? -> mCal.operationClicked(v!!.id) }
         binding.btnClear.setOnLongClickListener(View.OnLongClickListener { v: View? -> resetClicked() })
 
-        binding.btnEquals.setImageDrawable(VectorDrawableCompat.create(resources, drawable.ic_equals, theme))
         mResult = binding.result
         mFormula = binding.formula
 

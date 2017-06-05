@@ -74,9 +74,6 @@ class CalculatorImpl(val calculator: Calculator, value: String = "") {
         val newValue = formatString(currentValue + number)
         setValue(newValue)
 
-        val currentFormula = displayedFormula;
-        val newFormula = (currentFormula + number)
-        setFormular(newFormula)
     }
 
     private fun formatString(str:String) : String{
@@ -124,9 +121,7 @@ class CalculatorImpl(val calculator: Calculator, value: String = "") {
         if(operation == Key.ROOT)
             calculateResult()
         else{
-            val currentFormula = displayedFormula;
-            val newFormula = (currentFormula + operation.id)
-            setFormular(newFormula)
+
         }
 
     }
